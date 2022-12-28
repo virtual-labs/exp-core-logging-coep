@@ -10,7 +10,9 @@ Rock structure rating (RSR) by Wickham considered two elements influencing on ro
 Rock mass rating (RMR) by Bieniawski  also known as Geomechanics classification utilizes the basic parameters regarding the geometry and mechanical conditions of the rock mass. Q-system  is product of rock mass geometry, interblock shear strength and active stresses encountered during underground excavations. The RMR system was proposed by Bieniawski is  based on various case histories to recognize the stability and support requirements of tunnels.
 
  The RMR system has a wide variety of applications in different engineering projects like tunnels, foundations, slopes and mines.
+
 ##### There are six parameters for RMR system:
+
 - Uniaxial Compressive Strength of rock materials (UCS)
 - Rock quality designation (RQD)
 - Spacing of discontinuities
@@ -30,6 +32,7 @@ Rock mass rating (RMR) by Bieniawski  also known as Geomechanics classification 
 RMR system classifies strata along tunnel alignment into several zones, each with more or less similar geological features. In most of the circumstances, boundary of these structural regions will overlap with the main geological features such as shear zones, faults and dykes etc. The Q-system consists of six parameters to calculate Q values by using equation given below and Q values classify the rock mass into poor and good quality to estimate the required support.
 
 RMR is determined as an algebraic sum of ratings for all of the parameters. On the basis of RMR values for a given engineering structure, the rock mass is sorted into five classes: very good (RMR 100-81), good (80-61), fair (60-41), poor (40-21), and very poor (<20).
+
 Although the rating methods of RMR and Q-system are additive and multiplicative, respectively, the basic concepts of both schemes are similar. Both schemes allocate the ratings to the properties that influence the rock mass behavior and then quantitative figures such as total-RMR and Q-value are produced.
 Rock-quality designation (RQD) is a rough measure of the degree of jointing or fracture in a rock mass, measured as a percentage of the drill core in lengths of 10 cm or more. High-quality rock has an RQD of more than 75%, low quality of less than 50%. Rock quality designation (RQD) has several definitions.
 
