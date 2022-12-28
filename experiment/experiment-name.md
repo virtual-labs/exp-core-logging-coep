@@ -1,1 +1,1 @@
-## Experiment name
+## Identification of cores and core logging

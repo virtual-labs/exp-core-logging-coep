@@ -1,1 +1,1 @@
-### Aim of the experiment
+#### To calculate RQD.(ROCK QUALITY DESIGNATION)
