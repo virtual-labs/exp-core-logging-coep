@@ -1,0 +1,1 @@
+#### To calculate RQD.(ROCK QUALITY DESIGNATION)
