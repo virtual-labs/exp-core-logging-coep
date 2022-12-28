@@ -1,39 +1,99 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
+	"version": 2.0,
+	"questions": [
+	{
+			"question": "Based on the rock mass rating (RMR), a rock having a value ranging between 41-60 will be rated as ",
+			"answers": {
+				"a": "Very poor",
+				"b": "Poor",
+				"c": "Fair",
+				"d": "Very Good"
+			},
+			
+			"correctAnswer": "c",
+			"difficulty": "beginner"
+		},
+		{
+			"question": "In a core drilled for 100 m, the following fragments were obtained-24 m, 12, 11, 9, 22, 8, 12 and loose rock. The RQD of the rock is",
+			"answers": {
+				"a": "15%",
+				"b": "2.81% ",
+				"c": "3.2% ",
+				"d": "5.8%"
+			},
+			"correctAnswer": "b",
+			"difficulty": "beginner"
+		},
+		{
+			"question": "In a one meter Run, there are Il core pieces, each of 9 cm what is the RQD-?",
+			"answers": {
+				"a": "0%",
+				"b": "10%",
+				"c": "20%",
+				"d": "None of the above"
+			},
+			"correctAnswer": "a",
+			"difficulty": "beginner"
+		},
+		{
+			"question": "5 In a one mater Run, there are 09 pieces, each of 11em length, what is the RQD- ?",
+			"answers": {
+				"a": "0%",
+				"b": "100%",
+				"c": "99%",
+				"d": "50%"
+			},
+			
+			"correctAnswer": "c",
+			"difficulty": "beginner"
+		},
+		{
+			"question": "If the RQD% is <10% (less than 10%) then Quality of Rock is___________ ",
+			"answers": {
+				"a": "Good rock - Jointed ",
+				"b": "Excellent rock - Good quality",
+				"c": "Indicate Poor quality of Rock - Weak or fractured zone",
+				"d": "None of the above"
+			},
+			"correctAnswer": "c",
+			"difficulty": "beginner"
+		},
+		{
+			"question": "Do fractures in core pieces affect the value of core recovery?",
+			"answers": {
+				"a": "Not sure",
+				"b": "Yes",
+				"c": "Absolutly not",
+				"d": "None of the above"
+			},
+			
+			"correctAnswer": "a",
+			"difficulty": "beginner"
+		},
+		{
+			"question": "What is the length of core pieces which is considered for calculation of ROD.",
+			"answers": {
+				"a": "Pieces greater than 10 inches",
+				"b": "Pieces less than 20 inches",
+				"c": "Pieces less than 4 inches(100mm)",
+				"d": ". Pieces greater than 4 inches (100mm)"
+			},
+			
+			"correctAnswer": "d",
+			"difficulty": "beginner"
+		},
+		{
+			"question": "Discontinuity Spacing is used to describe______",
+			"answers": {
+				"a": "Rock mass quality",
+				"b": "Rock mass Rating",
+				"c": "Rock mass quantity",
+				"d": "Rock mass quantity Equality & quantity."
+			},
+			
+			"correctAnswer": "a",
+			"difficulty": "beginner"
+		}
+
+	]
 }

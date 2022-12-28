@@ -2,37 +2,85 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "RQD stands for",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Rock Quality Deficiency",
+        "b": "Rock Quality Designation",
+        "c": "Rock Quantity Designation",
+        "d": "Rock Quality Deficience"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Three methods commonly used to classify_____",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "RMR, RQD, SFR a Rock Mags",
+        "b": "RSR, R&D, SRF",
+        "c": "RMR, Q and GSI system",
+        "d": "None of the above."
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "If the RQD% Is 50-75, what is the class of Rock",
+      "answers": {
+        "a": "Very Poor",
+        "b": "Fair",
+        "c": "Good",
+        "d": "Excellent"
+      },
+     
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "What is the name of Continous Core drilling system?",
+      "answers": {
+        "a": "Nx system- NX size drill core ",
+        "b": "Vx system - Vx size drill core",
+        "c": "Dx system - Dx size drill core",
+        "d": "None of the above"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "RSR - Rock Structure Rating helps in_______",
+      "answers": {
+        "a": "Rating system for Rock Joints",
+        "b": "Rating system for Rock fractures ",
+        "c": "Rating system for Rock masses",
+        "d": "Rating system for Rock Discontinuities"
+      },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "Geological strength index (GSI) is used for ___________",
+      "answers": {
+        "a": "classification of very weak and highly jointed rock I",
+        "b": "Rock mass geomechanical properties ",
+        "c": "deformation, modulus strength",
+        "d": "All the above"
+      },
+    
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+	{
+      "question": "what does MPa stand for ___________",
+      "answers": {
+        "a": "Micro Pascals",
+        "b": "Mega Pascals",
+        "c": "All of the above.",
+        "d": "None of the above"
+      },
+    
+      "correctAnswer": "d",
       "difficulty": "beginner"
     }
   ]
