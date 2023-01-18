@@ -24,4 +24,3 @@ High quality core material is **absolutely crucial to the success of a rock char
 | Fair (Moderately weathered rocks) |	51 to 75% |
 | Good (Hard Rock)	 | 76 to 90% |
 | Very Good (Fresh rocks)	 | 91 to 100% |
-
