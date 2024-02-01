@@ -1,4 +1,4 @@
- var setValue = [
+var setValue = [
     [38, 17, 0,20,43],
     [38,17,20,35,0],
     [250,160,190,200,0],
@@ -23,63 +23,155 @@ for(var i=0;i<setValue.length;i++){
 	//	console.log("  in total "+total);
 	}
 }
+htm='<div class="row">'
+				for(var i=0;i<setValue.length;i++)
+				{
+					if(i==x){
+					//	console.log("x="+x+" image name"+imageArr[i]);
+						
+						htm+='<img src="images/'+imageArr[i]+'" style="height: 680px; width: 850px;" class="img-fluid" alt="Responsive image">'
+						}
+				}
+				
+				htm+='</div>'
+$("#content_div1").html(htm);
+htm='<span>'
++'<center   class="blink">Note :- Only taken core length pieces which is greater then and equal to 10CM (>=10)</center></span>'
 
-//console.log(" randam value "+x);
-//console.log(" total "+total);
-var htm='<div class="container-fluid" style="margin-top:20px;">'
-		+'<div class="row">'
-	        +'<div class="col-sm-6">'
-	        	+'<div class="card">'
-	        		+'<h5 class="card-header ">Finding RQD(  Rock Quality Designation  )</h5>'
-	        			+'<div class="card-body">'
-	        				+'<div class="row">'
-	        					+'<div class="col-sm-6">'
-	        						+'	<div class="form-group">'
-	        							for(var i=0;i<setValue.length;i++)
-	        							{
-	        								if(i==x){
-	        									//console.log(" Set [ "+setValue[i]+" ] ");
-	        									//console.log("  "+length[i]);
-	        									}
-	        							}
-	 									htm+='  <label for="" ></label>'
-	 									+'</div>'
-	 							+'</div>'
-	 						+'</div>'
-	 +'<div class="row">'
-	
-	 for(var i=0;i<setValue.length;i++)
+
+ for(var i=0;i<setValue.length;i++)
 		{
 	 		if(i==x){
 	 			
-			htm+='<label id="numberSet" style="font-size:20px;color:black;"> Set of core length pieces = [ '+setValue[i] +' ]'
-			+'<br><br> Total length of the core run = '+length[i] +'</label>'
+			htm+='<br><center><span class="question"> Set of core length pieces = [ '+setValue[i] +' ]'
+			+' And Total length of the core run = '+length[i] +'</span></center>'
 	 		}
 		}
-	 	htm+='<br><label><center id="note" style="font-size:18px;color:red;">Note :- Only taken core length pieces which is greater then and equal to 10CM (>=10)</label></center><br>'
-	 	+'<b><label style="font-size:20px;color:green;"> Formula is Given below</label></b>'
-	 +'<center><b id="formula" style="font-size:18px;color:red;">RQD= ( sum of core length pieces >= 10cm / total length of core run ) * 100</b></center><br><br>'
+	htm+='<div class="card" style="margin:20px;" id="CalculateActualFlow">'
+		+'<div class="card-header">'
+		+'<center><label style="font-size:20px;color:#fff;">Calculate RQD</label></center>'
+		+' </div>'
+		+'<div class="card-body">'
+		+'	<h5 class="card-title"></h5>'
+		+'	<p class="card-text" >'
+		 + '<div class="row"   >'
+	         +'<div class="col-sm-5">'
+	         +'<label  id=""  class="" style="font-size:16px;margin:15px 10px ;font-size:20px"><b>Enter calculate Answer of RQD: </b></label>'
+	         +'</div>'
+	         +'<div class="col-sm-3">'
+	         +'<input type="text" id="ans" value="" style=margin:15px 10px;width:100%;"  class=" form-control" />'
+	         +'</div>'
+	         +'<div class="col-sm-4">'
+	         +'<br><button type="submit" class="btn btn-danger" id="btnAnsCheck" style="width:100%;margin-top: -6px;" data-toggle="modal" data-target="#myModal" >Submit</button>'
+	         +'</div>'
+	     +'</div>'
+		+'</p>'
+		
+		+'</div>'
+		+'</div>'
+		+'	<div class="modal" id="myModal">'
+		 +' <div class="modal-dialog">'
+		+'	<div class="modal-content">'
+
+			  <!-- Modal Header -->
+		+'	  <div class="modal-header" style="background-color:rgba(78,109,114,1);color:#fff;">'
+		+'		<h4 class="modal-title">Message Box</h4>'
+		+'		<button type="button" class="close" data-dismiss="modal">&times;</button>'
+		+'	  </div>'
+
+			  <!-- Modal body -->'
+		+'	  <div class="modal-body" id="modelBody">'
+		+'		Modal body..'
+		+'	  </div>'
+
+			  <!-- Modal footer -->
+		+'	  <div class="modal-footer">'
+		+'		<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>'
+		+'	  </div>'
+
+		+'	</div>'
+		 +' </div>'
+		+'</div>'
+
+$("#content_div2").html(htm);
+  var id=0;
+  var total=0;
+  for(var i=0;i<setValue.length;i++){
+	if(i==x)
+	{
+		for(var j=0;j<setValue.length;j++)
+		{	
+			total+=parseInt(setValue[i][j]);
+		
+		}
+	}
+	}
+	  $('#btnAnsCheck').click(function(){
+		  
 	
-	 +'</div>'
-
-	 for(var i=0;i<setValue.length;i++)
-		{
-	 		if(i==x){
-	 			//total+=parseInt(setValue[i]);
-	 			var finalAns= parseFloat((total/parseInt(length[x]))*100);
+	var finalAns= parseFloat((total/parseInt(length[x]))*100);
 	 			var rountofAns=Math.round(finalAns);
-			htm+='<center><b id="step2" style="font-size:18px;color:red; display:none;">= Sum of ( '+setValue[i] +' )/'+length[i] + ' * 100'+' </b></center><br>'
-			 +'<center><b id="step3" style="font-size:18px;color:red;display:none;">= ('+total+'/'+length[i] +')  * 100 </b></center>'
-			 +'<br><center><b id="step4" style="font-size:18px;color:red;display:none;">RQD = '+rountofAns+'% </b></center>'
-			 +'<br><center><div id="finalDiv"><button id="smtFinalAnswer" class="btn btn-success">Submit final answer</button>'
-			 +'<input type="text"  class="form-control-sm" style="margin-left:50px;display:none;" id="textAns"> </div></center>'
-			 +'<br>'
-	 		}
+		 
+	console.log("final answer "+rountofAns);
+		  flow = $("#ans").val();
+		  if(flow==""){
+
+			$("#modelBody").html("<b >Enter numeric value.</b> ");
+			
 		}
-//	console.log("final answer "+rountofAns);
+		else
+			{
+				if (id <= 3) {
+					if (rountofAns == flow) {
+						//$("#ans").val("");
+						
+						id=0;
+						 $("#modelBody").css("color", "blue");
+						$("#modelBody").html("<b class='boldTextblue'>Correct Answer Now See The Below Table .</b>");
+						tableCreation();
+				
+					} else if (rountofAns != flow) {
+						 $("#modelBody").css("color", "red");
+//					alert("Entered value is incorrect.Try it again... ");
+					$("#modelBody").html("<b class='boldTextRed'>Entered value is incorrect.Try it again...</b>");
+					
+					}
 
 
-htm+='<div class="container" id="geoTable" style="display:none;">'
+				} else if (id == 4) {
+					 $("#modelBody").css("color", "blue");
+					
+					$("#modelBody").html("Formula : RQD= ( sum of core length pieces >= 10cm / total length of core run ) * 100");
+					
+					
+				} else {
+					flow = $("#ans").val();
+
+					if (rountofAns == flow) {
+						
+						//$("#ans").val("");
+						
+						id=0;
+						 $("#modelBody").css("color", "blue");
+						$("#modelBody").html("<b class='boldTextblue'>Your Answer is Correct. Now refer the below table .</b>");
+						tableCreation();
+					} else {
+
+						 $("#modelBody").css("color", "green");
+						$("#modelBody").html("<b class='boldTextblue'>Correct Answer is " + rountofAns+'</b>');
+					}
+				}
+				id++;
+	
+			} 
+	  });
+
+function tableCreation()
+{
+	
+	//#("ans").html();
+	$("#ans,#btnAnsCheck").prop("disabled",true);
+	var htm='<div class="container" id="geoTable">'
 		+'<table class="table table-bordered table-primary">'
 		+'  <thead>'
 		+'    <tr>'
@@ -111,81 +203,7 @@ htm+='<div class="container" id="geoTable" style="display:none;">'
 		+'  </tbody>'
 		+'</table>'
 +'</div>'
+$("#tableDiv").html(htm);
 
-+'</div>'
-
-	+'</div>'
-
-	+'</div>'
-	+'<div class="col-sm-6">'
-	+'<div class="card">'
-		+'<h5 class="card-header h5"> RQD Diagram</h5>'
-			+'<div class="card-body">'
-				+'<div class="row">'
-				for(var i=0;i<setValue.length;i++)
-				{
-					if(i==x){
-					//	console.log("x="+x+" image name"+imageArr[i]);
-						
-						htm+='<img src="images/'+imageArr[i]+'" style="height: 680px; width: 850px;" class="img-fluid" alt="Responsive image">'
-						}
-				}
-				
-				htm+='</div>'
-			+'</div>'
-	+'</div>'
-	+'</div>'
-$("#main-div").html(htm);
-
-$("#smtFinalAnswer").click(function(){
 	
-$("#textAns").show();
-});
-$("#textAns").change(function(){
-	$("#smtFinalAnswer").hide();
-	if( parseInt($("#textAns").val())==parseInt(rountofAns))
-		{
-		$("#geoTable").show();
-		$("#finalDiv").html('<div class="alert alert-success" style="font-size:20px;" role="alert">Doing great job. Correct answer ... !!! </div>');
-		}
-	else
-		{
-		//$("#finalDiv").html('<div class="alert alert-danger" role="alert"> Wrong answer .... !!! </div>');
-		var r = confirm(" Wrong anwser.. try again !!!");
-		if (r == true) {
-			$("#textAns").val(" ");
-		   
-		    if(parseInt(count)<2)
-		    	{
-		    		//$("#smtFinalAnswer").show();
-		    		$("#textAns").show();
-		    	//	console.log("count"+count);
-		    		
-		    	}
-		    
-		    else if(count==1)
-		    	{
-		    		alert("This is your Last attempt...");
-		    	}
-		    else if(count==2)
-		    	{
-		    		$("#step2").show();
-		    		$("#step3").show();
-		    		$("#step4").show();
-		    		$("#smtFinalAnswer").hide();
-		    		$("#textAns").hide();
-		    		$("#geoTable").show();
-		    	//	$("#finalDiv").html('<div class="alert alert-success" style="font-size:20px;" role="alert">Doing great job correct answer .... !!! </div>');
-		    	}
-		    count++;
-		}
-		else {
-			var r = confirm("Do you want to take another Set of core length ?");
-			if(r==true)
-			{
-				  location.reload();
-			}
-		}
-		}
-	
-});
+}

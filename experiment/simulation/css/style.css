@@ -42,7 +42,18 @@ background: linear-gradient(90deg, rgba(125,176,169,1) 0%, rgba(78,109,114,1) 31
 .slider:hover {
 	opacity: 1;
 }
-
+.question{
+	padding:10px;
+	background-color:grey;
+	font-size:20px;
+	color:#fff;
+	border-radius:10px; 
+	margin-top:10px;
+}
+.card-header {
+	background-color:rgba(78,109,114,1);
+	color:#fff;
+}
 .slider::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	appearance: none;
